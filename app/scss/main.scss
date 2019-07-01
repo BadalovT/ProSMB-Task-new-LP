@@ -1,0 +1,35 @@
+$main-font: "San Francisco",sans-serif;
+
+@import "header.scss";
+@import "responsive.scss";
+@import "what-is.scss";
+@import "feature.scss";
+@import "benefit.scss";
+@import "pricing.scss";
+@import "trust.scss";
+@import "free-register.scss";
+@import "hamburger.scss";
+@import "footer.scss";
+
+
+
+@import "../libs/bootstrap/scss/bootstrap.scss";
+@import "../fonts/GothamBook.ttf";
+
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans&display=swap');
+
+body{
+  font-family: $main-font;
+  background: #fbfbfb;
+}
+.mt-16{
+  margin-top:16rem;
+}
+.mt-5{
+  margin-top: 5rem !important;
+}
+
+.mobile{
+  display: none;
+}

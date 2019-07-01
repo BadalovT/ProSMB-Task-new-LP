@@ -1,0 +1,118 @@
+#nav {
+  position:relative;
+  top:0;
+  left:0;
+  height:50px;
+  width:100%;
+  background-color:transparent;
+  transition: all .5s ease;
+  z-index: 999;
+  max-width: 100% !important;
+  .logo{
+    padding: 13px 42px;
+  }
+  #close {
+    position:absolute;
+    top:25px;
+    right:25px;
+    transform:translateY(-25px);
+    width:50px;
+    height:50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+    .bar {
+      position:absolute;
+      width:50%;
+      height:1px;
+      background-color:#FFF;
+      transition: all .5s ease;
+      &:first-of-type {
+        top:42%;
+      }
+      &:last-of-type {
+        top:58%;
+      }
+    }
+  }
+  #nav-items {
+    visibility:hidden;
+    // padding-top:50px;
+    transition: all .5s ease;
+    height: 100vh;
+    ul {
+      list-style:none;
+      margin:0 2rem;
+      padding: 0 10px;
+      .mlang{
+        display: flex;
+        justify-content: space-around;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0;
+        a{
+          width: 100%;
+          padding: 20px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        a.active{
+          background-color: #358A94;;
+        }
+      }
+      li {
+        opacity:0;
+        font-size:1.2rem;
+        padding:2.3rem 0;
+        color: #FFF;
+        &:not(:last-of-type) {
+          border-bottom:1px solid rgba(255,255,255,.25);
+
+        }
+        a{
+          color: #FFF;
+          text-decoration: none;
+          img{
+            margin-right: 20px;
+            width: 26px;
+            height: 26px;
+
+          }
+        }
+        // @for $i from 1 through 10 {
+        //   &:nth-child(#{$i}) {
+        //     transition: opacity .5s ease;
+        //     transition-delay:(#{$i*0.1s});
+        //   }
+        // }
+      }
+    }
+  }
+  &.active {
+    background-color:#58aac1;
+    height:100%;
+    #close {
+      .bar {
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        &:first-of-type {
+          transform:rotate(225deg);
+        }
+        &:last-of-type {
+          transform:rotate(-225deg);
+        }
+      }
+    }
+    #nav-items {
+      visibility:visible;
+      ul {
+        li {
+          opacity:1;
+        }
+      }
+    }
+  }
+}

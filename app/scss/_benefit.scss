@@ -1,0 +1,66 @@
+.benefit{
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(88.58deg, rgba(114, 241, 112, 0.55) -74.1%, rgba(255, 255, 255, 0) 136.98%), #348FC3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  .tab-header{
+    .tabs{
+      list-style: none;
+      padding-left: 0;
+      li{
+        margin-bottom: 15px;
+        font-family: $main-font;
+        font-size: 20px;
+        line-height: 48px;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        &:hover{
+          color: #FFFFFF;
+        }
+      }
+      .current{
+        font-family: $main-font;
+        font-size: 30px;
+        line-height: 48px;
+        color: #FFFFFF;
+      }
+    }
+  }
+  .tab-content{
+    display: none;
+    h4{
+      font-family: $main-font;
+      font-size: 28px;
+      line-height: 48px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    h2{
+      font-family: $main-font;
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 15px;
+    }
+    p{
+      font-family: $main-font;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 20px;
+    }
+    img{
+      margin-top: 20px;
+    }
+  }
+  .tab-content.current{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,145 @@
+.feature{
+  width: 100%;
+  padding: 0px 0 0 0;
+  background: linear-gradient(278.02deg, rgba(114, 241, 112, 0.55) -51.44%, rgba(255, 255, 255, 0) 157.68%), #348FC3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  transition: all .5s ease-in-out;
+  height: 450px;
+  overflow: hidden;
+  .owl-carousel {
+      height: 135px !important;
+    .owl-stage{
+      display: flex;
+      align-items: center;
+      .owl-item {
+        display: flex;
+        justify-content: center;
+        .item-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:#ffffff20;
+          width: 126px;
+          height: 126px;
+          border-radius: 100%;
+        }
+        img{
+          border-radius: 50%;
+          width: 80%;
+        }
+
+    }
+
+  }
+  .owl-item{
+    transform: scale(.8);
+    svg{
+    opacity: 0.3;
+    }
+  }
+  // .owl-item.active > div:after {
+  //   content: 'active';
+  // }
+  // .owl-item.center > div:after {
+  //   content: 'Səsli tapşırıq';
+  //   font-family: $main-font;
+  //   font-size: 24px;
+  //   line-height: 68px;
+  //   display: flex;
+  //   align-items: center;
+  //   text-align: center;
+  //   color: #FFFFFF;
+  // }
+  // .owl-item.active.center > div:after {
+  //   content: 'active center';
+  // }
+  .owl-item > div:after {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+ 
+  .active.center {
+   margin-bottom: 20px;
+   .item-img{
+    background-color: #ffffff70;
+   }
+   
+   svg{
+      opacity: 1;
+   }
+  }
+  .active {
+    transform: scale(.8);
+    transition: .6s ease;
+  }
+}
+h4{
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+p{
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.text{
+  .active-text{
+    display: block !important;
+  }
+  .text-data{
+    display: none;
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+hr{
+  color: #FFFFFF;
+  background-color: #fff;
+}
+.mobile-img{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+}
+img{
+  width: 64%;
+  margin-left: 26%;
+  padding: 40px 0 0 0;
+  position: absolute;
+}
+.owl-nav{
+  display: block !important;
+  .owl-prev{
+    background: transparent;
+    position: absolute;
+    top: 23px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    outline: none;
+    color: transparent !important;
+  }
+  .owl-next{
+    background: transparent;
+    position: absolute;
+    top: 23px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    outline: none;
+    color: transparent !important;
+  }
+}
+}

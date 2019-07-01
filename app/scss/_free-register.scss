@@ -1,0 +1,44 @@
+.free-register{
+  h3{
+    font-family: $main-font;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    .free{
+      color:#D62B47;
+      font-family: $main-font;
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+    }
+
+  }
+  p{
+    font-family:$main-font;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #424141;
+  }
+  .free-register-btn{
+    background: #348FC3;
+    border-radius: 8px;
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  span{
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+  }
+ 
+}
