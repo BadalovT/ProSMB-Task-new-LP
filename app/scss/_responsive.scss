@@ -78,6 +78,11 @@
       background-repeat: no-repeat;
       background-size: 43%;
       height: 450px !important;
+      .logo{
+        img{
+          width: 100px;;
+        }
+      }
       .head-register{
         display: flex !important;
         justify-content: flex-start !important;
@@ -288,8 +293,12 @@
     .contact{
       flex-direction: row !important;
       align-items: flex-start !important;
+      justify-content: flex-end;
       .logo{
         margin-top: 25px;
+      img{
+        width: 100px;
+      }
       }
       ul{
         li{
@@ -327,6 +336,11 @@
   }
   .desktop-768{
     display: none;
+  }
+  footer{
+    .contact{
+      justify-content: flex-start;
+    }
   }
 }
 @media screen and (max-width: 600px){
