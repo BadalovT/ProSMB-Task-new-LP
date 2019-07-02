@@ -52,20 +52,22 @@ owl.on('changed.owl.carousel', function(){
     })
     
 
+
     $(window).scroll(function(){
         if ($(window).scrollTop() >= 40) {
             $('.head').addClass('fixed-header');
-            $(".head .mobile .logo img").attr("src","img/logo.png")
+            $(".logo .logo-mob img").attr("src","img/logo.png")
         }
         else {
             $('.head').removeClass('fixed-header');
-            $(".head .mobile .logo img").attr("src","img/logo-black.svg")
+            $(".logo .logo-mob img").attr("src","img/logo-black.svg")
 
         }
     });
 
-  
-
+    $("#nav #nav-items ul li a").click(function(){
+      $("#nav").removeClass('active');
+    })
 
 });
 
