@@ -8,8 +8,12 @@
   transition: all .5s ease;
   z-index: 999;
   max-width: 100% !important;
-  .logo{
+  overflow-y: scroll;
+  .logo-mob{
     padding: 13px 42px;
+    img{
+      width: 100px;;
+    }
   }
   #close {
     position:absolute;

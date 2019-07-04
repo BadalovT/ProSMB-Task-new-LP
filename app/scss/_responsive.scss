@@ -78,11 +78,7 @@
       background-repeat: no-repeat;
       background-size: 43%;
       height: 450px !important;
-      .logo{
-        img{
-          width: 100px;;
-        }
-      }
+      
       .head-register{
         display: flex !important;
         justify-content: flex-start !important;
@@ -315,7 +311,6 @@
   }
   
 }
-
 @media screen and (max-width: 768px){
   .head-register{
     display: flex !important;
