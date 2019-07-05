@@ -13,17 +13,15 @@ $('.trust .owl-carousel').owlCarousel({
 })
 
 $('.feature .owl-carousel').owlCarousel({
-    // autoplay: true,
+    autoplay: true,
     items:3,
     loop:true,
     nav:true,
     center:true,
-    dot:true,
-   
   });
 
   $('.pricing .owl-carousel').owlCarousel({
-    // autoplay: true,
+    autoplay: true,
     items:1.5,
     loop:true,
     // nav:true,
@@ -31,15 +29,34 @@ $('.feature .owl-carousel').owlCarousel({
     dot:true,
   });
 
-var owl = $(".feature .owl-carousel")
-owl.on('change.owl.carousel.active', function(){
-  console.log("fvsv")
-    var center=$(".center");
-    var value= $(center).find(".item-img").attr('id');
+
+
+  let owl = $(".feature .owl-carousel")
+  owl.on('change.owl.carousel.active', function(){
+    console.log("fvsv")
+    var value= $(".active.center").find(".item-img").attr('id');
     var currentActive=$(`.feature .text .text-data[data-value=${value}]`);
     $(".text-data").removeClass("active-text");
     currentActive.addClass("active-text");
-    
+
+    })
+
+
+ $('.owl-next').click(function() {
+  console.log("fvsv")
+  var value= $(".active.center").find(".item-img").attr('id');
+  var currentActive=$(`.feature .text .text-data[data-value=${value}]`);
+  $(".text-data").removeClass("active-text");
+  currentActive.addClass("active-text");
+
+})
+$('.owl-prev').click(function() {
+  console.log("fvsv")
+  var value= $(".active.center").find(".item-img").attr('id');
+  var currentActive=$(`.feature .text .text-data[data-value=${value}]`);
+  $(".text-data").removeClass("active-text");
+  currentActive.addClass("active-text");
+
 })
 
 	$('ul.tabs li').click(function(){
@@ -83,6 +100,10 @@ jQuery(document).ready(function ($) {
     });
 })
 
+
+function newFunction(owl) {
+  owl();
+}
 
 function main() {
     var nav = document.getElementById('nav');

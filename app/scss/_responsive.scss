@@ -88,11 +88,11 @@
   .what-is-mobile{
     .right-wh{
       float: right;
-      // width: 50%;
+      width: 50%;
     }
     .left-wh{
       float: left;
-      // width: 50%;
+      width: 50%;
     }
     h4{
       font-family: $main-font;
@@ -139,6 +139,12 @@
       line-height: 20px !important;
       text-align: center;
       color: #FFFFFF;
+    }
+    .owl-prev{
+      left: 15px !important;
+    }
+    .owl-next{
+      right: 15px !important;
     }
     
   }
