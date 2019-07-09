@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
 
 $('.trust .owl-carousel').owlCarousel({
-    // autoplay: true,
+  autoplay: true,
   loop:true,
   margin:10,
   responsiveClass:true,
@@ -13,7 +13,6 @@ $('.trust .owl-carousel').owlCarousel({
 })
 
 $('.feature .owl-carousel').owlCarousel({
-    autoplay: true,
     items:3,
     loop:true,
     nav:true,
@@ -24,7 +23,6 @@ $('.feature .owl-carousel').owlCarousel({
     autoplay: true,
     items:1.5,
     loop:true,
-    // nav:true,
     center:true,
     dot:true,
   });
@@ -32,9 +30,9 @@ $('.feature .owl-carousel').owlCarousel({
 
 
   let owl = $(".feature .owl-carousel")
-  owl.on('change.owl.carousel.active', function(){
+  owl.on('change.owl.carousel', function(e){
     console.log("fvsv")
-    var value= $(".active.center").find(".item-img").attr('id');
+    var value= $(".active.center .item-img").attr('id');
     var currentActive=$(`.feature .text .text-data[data-value=${value}]`);
     $(".text-data").removeClass("active-text");
     currentActive.addClass("active-text");
